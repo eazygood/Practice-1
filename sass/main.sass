@@ -1,0 +1,194 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+
+
+//Custom Styles Here
+
+.section_1
+	min-height: 348px
+	background-image: url("../img/section_1.jpg")
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+
+.sect_1_header
+	text-align: center
+	color: #3f405e
+	padding-bottom: 
+	h1
+		font-size: em(25px)
+	p
+		font-size: em(14px)
+		line-height: em(23px)
+
+.section_1
+	.sect_1_left
+		text-align: right
+		max-width: 330px
+		float: right
+		color: #3f405e
+		p
+			font-size: em(14px)
+			line-height: em(23px)
+		h4
+			font-size: em(16px)
+	.sect_1_right
+		text-align: left
+		max-width: 370px
+		color: #3f405e
+		float: left
+		p
+			font-size: em(14px)
+			line-height: em(23px)
+		h4
+			font-size: em(16px)
+
+.section_1
+	img
+		margin-top: 20px
+	.earth
+		height: 67px
+		width: 67px
+	.plane
+		height: 67px
+		width: 67px
+	.ticket
+		margin-left: 15px
+		height: 61px
+		width: 43px
+	.camera
+		height: 58px
+		width: 67px
+
+
+.section_2
+	min-height: 680px
+	background-image: radial-gradient(circle at top, #fff, #f3f3f4 50%)
+	.border_shine
+		position: relative
+		height: 130px
+		background-image: radial-gradient(50% 100%, circle, #fff, #f3f3f4);
+
+	.sect_2_header
+		@extend .sect_1_header
+		padding-bottom: 15px
+	img
+		height: 250px
+		width: 100%
+	.sect_2_wrap
+		padding: 25px 7% 0
+		text-align: center
+		position: relative
+		background: #fff
+		height: 250px
+		width: 100%
+		h3
+			font-size: em(16px)
+			margin-bottom: 15px
+		p
+			padding-bottom: 20px
+			font-size: em(14px)
+	.offset-0
+		padding-left: 0
+		padding-right: 0
+
+.section_3
+	min-height: 688px
+	background-color: #f3f3f3
+	background-image: url(../img/footer_img2.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	position: relative
+	.footer_text
+		max-width: 460px
+		h2
+			font-weight: bold
+			margin-top: 80px
+			padding-bottom: 25px
+		.block_1
+			p
+				padding-bottom: 10px
+				line-height: em(23px)
+				font-size: em(14px)
+		.block_2
+			p
+				padding-bottom: 10px
+				line-height: em(23px)
+				font-size: em(14px)
+		h3
+			padding-bottom: 15px
+		.block_3
+			p
+				line-height: em(23px)
+				padding-bottom: 15px
+				font-size: em(14px)
+		address
+			ul
+				margin: 0
+				padding: 0 0 0 20px
+				color: #fff
+				font-size: em(14px)
+				li
+					span
+						color: #000
+	
+	.forms
+		margin-top: 150px
+		label
+			display: block
+			margin-bottom: 2px
+		input, textarea
+			display: block
+			width: 100%
+			background-color: rgba(63,64,94,.33)
+			text-indent: 10px
+			padding: 10px 0
+			color: #fff
+			font-size: em(14px)
+			font-weight: normal
+			border: 1px solid #fff
+			box-shadow: 0 1px #fff inset
+			transition: all .5s ease
+			&:focus
+				border-top: none
+				outline: 0 none
+				box-shadow: 0 2px #1f2a36 inset
+		textarea
+			resize: none
+			height: 150px
+	.button
+		float: right
+		margin-top: 20px
+		.btn
+			padding: 5px 40px
+//ALWAYS END
+@import "media"

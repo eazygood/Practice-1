@@ -1,0 +1,127 @@
+@import "bourbon"
+@import "_vars.sass"
+@import "fonts.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+	padding: 0
+	margin: 0
+
+.hidden
+	display: none
+
+h1
+	font-size: 32px
+	color: #324ddd
+
+h1, h2, h3, h4, h5, h6
+	font-family: 'RobotoRegular', sans-serif
+
+.main_head
+	min-height: 830px
+	background-image: url(../img/header_bg2.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+
+
+.top_line
+	min-height: 70px 
+	background-image: url(../img/border_h.png)
+	background-repeat: repeat-x
+	background-position: 0 10px
+
+.top_menu
+	font-size: em(15px)
+	list-style-type: none
+	text-align: center
+	ul
+		padding-left: 0
+		li
+			display: inline-block
+			margin-top: 25px
+			margin-right: 20px
+			text-decoration: none
+			text-transform: uppercase
+			a
+				color: #3f405e
+				&:hover
+					color: #97c1ef
+
+.toggle_menu
+	display: block
+	width: 28px
+	height: 28px
+	margin: 21px auto 0
+
+.toggle_menu span:after,
+.toggle_menu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: -9px
+
+.toggle_menu span:after
+	top: 9px
+
+.toggle_menu span
+	position: relative
+	display: block
+
+.toggle_menu span,
+.toggle_menu span:after,
+.toggle_menu span:before 
+	width: 100%
+	height: 2px
+	background-color: #000
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+.toggle_menu.on span
+	background-color: transparent
+
+.toggle_menu.on span:before
+	transform: rotate(45deg) translate(5px, 5px)
+
+.toggle_menu.on span:after
+	transform: rotate(-45deg) translate(7px, -8px)
+
+.toggle_menu.on + #menu
+	opacity: 1
+	visibility: visible
+
+.main_header
+	margin-top: 160px
+	p
+		color: #fff
+		text-align: center
+		font-size: em(16px)
+		line-height: em(18px)
+
+.main_menu
+	margin-top: 148px
+	text-align: center
+	h1
+		color: #fff
+		font-size: em(108px)
+		font-family: 'OpenSans-Regular', sans-serif
+
+.button
+	text-align: center
+	margin-top: 35px
+	.btn
+		display: inline-block
+		padding: 11px 36px
+		color: #fff
+		border: 1px solid #a4d0ff
+		border-radius: 5px
+		font-size: em(16px)
+		text-transform: uppercase
+		&:hover
+			background-color: rgba(152, 196, 240, .9)
